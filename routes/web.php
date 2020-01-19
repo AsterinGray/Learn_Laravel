@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('halo', function(){
     return "Halo i'm here learning laravel";
 });
+
+Route::get('blog', function(){
+    return view('blog');
+});
