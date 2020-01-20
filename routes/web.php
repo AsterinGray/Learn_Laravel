@@ -22,3 +22,7 @@ Route::get('halo', function(){
 Route::get('blog', function(){
     return view('blog');
 });
+
+Route::get('Test', 'TestController@index');
+
+Route::get('/Test/{Name}','TestController@index');
