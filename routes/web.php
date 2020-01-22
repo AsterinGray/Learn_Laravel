@@ -25,4 +25,7 @@ Route::get('blog', function(){
 
 Route::get('Test', 'TestController@index');
 
-Route::get('/Test/{Name}','TestController@index');
+Route::get('/Test/{name}','TestController@index');
+
+Route::get('/form', 'TestController@form');
+Route::post('/form/process','TestController@process');

@@ -18,7 +18,17 @@ class TestController extends Controller
     //     return view('passing',['Name' => $Name, 'Courses' => $Course]);
     // }
 
-    public function index($Name){
-        return $Name;
+    public function index($name){
+        return $name;
+    }
+
+    public function form(){
+        return view('form');
+    }
+
+    public function process(Request $form1){
+        $name = $form1->input('name');
+        $address = $form1->input('address');
+        return "Name : ".$name.", <br>Address : ".$address; 
     }
 }
