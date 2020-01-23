@@ -29,3 +29,7 @@ Route::get('/Test/{name}','TestController@index');
 
 Route::get('/form', 'TestController@form');
 Route::post('/form/process','TestController@process');
+
+Route::get('/blog','BlogController@home');
+Route::get('blog/about','BlogController@about');
+Route::get('blog/contact','BlogController@contact');
